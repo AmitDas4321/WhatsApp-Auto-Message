@@ -13,7 +13,7 @@ def send_whatsapp_bot():
             pyperclip.copy(message)                # Copy message to clipboard
             pyautogui.hotkey("ctrl", "v")          # Paste the message
             pyautogui.press("enter")               # Press Enter to send
-            time.sleep(0.1)
+            time.sleep(0.1)                        # Slight delay to avoid freezing or detection
 
     except KeyboardInterrupt:
         pass  # Just silently stop without printing anything
