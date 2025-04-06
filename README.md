@@ -23,7 +23,7 @@ Make sure you have the following before running the script:
 - 🖥️ Operating System: Windows / macOS / Linux  
 - 🐍 Python 3.x installed  
 - 🧑‍💻 Code Editor: [VS Code](https://code.visualstudio.com/) or any of your choice  
-- 💬 A WhatsApp account with [WhatsApp Web](https://web.whatsapp.com)  
+- 💬 A WhatsApp account with <a href="https://web.whatsapp.com" target="_blank">WhatsApp Web</a>  
 - 📦 Python module: `pyautogui`
 
 Install the required library with:
