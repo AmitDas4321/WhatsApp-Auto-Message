@@ -101,4 +101,5 @@ for i in range(500):
 
 ## 👨‍💻 Created By
 
-Made with ❤️ by a Python enthusiast for educational fun!
+Made with ❤️ by Amit Das — a Python and web enthusiast.
+Feel free to connect for more cool automation scripts and tools!
