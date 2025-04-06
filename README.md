@@ -29,7 +29,7 @@ Make sure you have the following before running the script:
 Install the required library with:
 
 ```bash
-pip install pyautogui & pyperclip
+pip install pyautogui
 ```
 
 ---
