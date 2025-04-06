@@ -1,14 +1,22 @@
-import pyautogui  # Automates keyboard and mouse actions
-import time       # Adds delays between actions
+import pyautogui
+import time
+import pyperclip  # Required to copy message with emoji to clipboard
 
-# Prompt user to get ready
-print("⏳ You have 10 seconds to open WhatsApp Web and select the chat where messages should be sent...")
+def send_whatsapp_bot():
+    try:
+        print("⏳ You have 10 seconds to open WhatsApp Web and select the chat where messages should be sent...")
+        time.sleep(10)
 
-# Delay to allow manual chat selection
-time.sleep(10)
+        message = "I miss you ❤️"
 
-# Message sending loop
-for i in range(1000):  # Adjust the number as needed
-    pyautogui.typewrite("Sorry")  # Message to be sent
-    pyautogui.press("enter")      # Press Enter to send
-    time.sleep(0.1)               # Slight delay to avoid freezing or detection
+        for i in range(1000):
+            pyperclip.copy(message)                # Copy message to clipboard
+            pyautogui.hotkey("ctrl", "v")          # Paste the message
+            pyautogui.press("enter")               # Press Enter to send
+            time.sleep(0.1)
+
+    except KeyboardInterrupt:
+        pass  # Just silently stop without printing anything
+
+# Run the function
+send_whatsapp_bot()
