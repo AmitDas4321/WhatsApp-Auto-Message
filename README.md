@@ -101,6 +101,15 @@ for i in range(500):
 
 ---
 
+## ❤️ Fun Use-Case Idea
+
+Did your **girlfriend or crush get mad at you**? 😢  
+Win her back with some harmless charm! Just replace the message with something like:
+
+```python
+pyautogui.typewrite("I'm really sorry 😔❤️ Please talk to me")
+```
+
 ## 👨‍💻 Created By
 
 Made with ❤️ by Amit Das — a Python and web enthusiast.
