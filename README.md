@@ -1,52 +1,104 @@
-# WhatsApp Auto Message Bot 🤖
+# 🤖 WhatsApp Auto Message Bot
 
-This is a fun and simple Python script that automatically sends a custom message multiple times to a selected WhatsApp Web chat using your own computer. Created for **educational and personal use only** — perfect for pranks with friends (with permission 😄).
+A fun and lightweight Python script that automates sending a custom message repeatedly on WhatsApp Web. Perfect for harmless pranks with friends (with their consent 😄) or simply exploring Python automation.
+
+> ⚠️ **For educational and personal use only**
 
 ---
 
 ## ⚠️ Disclaimer
 
-- This script is for **educational and personal use only**.
-- Do **not** use it to spam or harass others — this violates [WhatsApp's Terms of Service](https://www.whatsapp.com/legal/terms-of-service).
-- The author is **not responsible** for any misuse.
+- This script is meant **strictly for educational and personal use**.
+- Do **NOT** use it for spam, harassment, or any activity that violates [WhatsApp's Terms of Service](https://www.whatsapp.com/legal/terms-of-service).
+- The developer is **not responsible** for any misuse of this script.
 
 ---
 
 ## 📦 Requirements
 
-- Windows, macOS, or Linux
-- Python 3.x installed
-- [VS Code](https://code.visualstudio.com/)
-- WhatsApp account with access to [https://web.whatsapp.com](https://web.whatsapp.com)
-- Python library: `pyautogui`
+Make sure you have the following before running the script:
+
+- 🖥️ Operating System: Windows / macOS / Linux  
+- 🐍 Python 3.x installed  
+- 🧑‍💻 Code Editor: [VS Code](https://code.visualstudio.com/) or any of your choice  
+- 💬 A WhatsApp account with [WhatsApp Web](https://web.whatsapp.com)  
+- 📦 Python module: `pyautogui`
+
+Install the required library with:
+
+```bash
+pip install pyautogui
+```
 
 ---
 
-## 🧠 Script Explanation (with comments)
+## 💡 How It Works
 
-Here’s the content of `whatsapp_bot.py` with all important comments:
+This script simulates keyboard input to repeatedly send a message in a selected WhatsApp chat.
+
+---
+
+## 📜 Script (`whatsapp_bot.py`)
 
 ```python
-import pyautogui  # Used for keyboard and mouse automation
-import time       # Used for delay between actions
+import pyautogui  # Automates keyboard and mouse actions
+import time       # Adds delays between actions
 
-# Notify the user
-print("You have 10 seconds to open WhatsApp Web and select the chat...")
+# Prompt user to get ready
+print("⏳ You have 10 seconds to open WhatsApp Web and select the chat where messages should be sent...")
 
-# Wait for 10 seconds so you can click on the WhatsApp chat
+# Delay to allow manual chat selection
 time.sleep(10)
 
-# Loop 1000 times to send "Sorry"
-for i in range(1000):
-    pyautogui.typewrite("Sorry")  # Type the message
-    pyautogui.press("enter")      # Press Enter to send it
-    time.sleep(0.1)               # Wait 0.1 seconds between messages to avoid flooding
+# Message sending loop
+for i in range(1000):  # Adjust the number as needed
+    pyautogui.typewrite("Sorry")  # Message to be sent
+    pyautogui.press("enter")      # Press Enter to send
+    time.sleep(0.1)               # Slight delay to avoid freezing or detection
 ```
 
-```requerment
-pip install pyautogui
-```
+> 💡 Tip: You can replace `"Sorry"` with any custom message of your choice.
+
+---
+
+## ▶️ Running the Script
+
+1. Open [WhatsApp Web](https://web.whatsapp.com) in your browser.
+2. Select the chat where you want to send the message.
+3. Run the script using:
 
 ```bash
 python whatsapp_bot.py
 ```
+
+4. Sit back and watch the bot do its thing!
+
+---
+
+## 🛑 To Stop the Script
+
+To stop the message loop midway, simply press `Ctrl + C` in the terminal.
+
+---
+
+## 💬 Customization
+
+Want to customize the script? You can:
+- Change the message content
+- Adjust the number of repetitions
+- Modify the time delay between messages
+
+Example:
+
+```python
+for i in range(500):
+    pyautogui.typewrite("Hey, just checking in!")
+    pyautogui.press("enter")
+    time.sleep(0.2)
+```
+
+---
+
+## 👨‍💻 Created By
+
+Made with ❤️ by a Python enthusiast for educational fun!
