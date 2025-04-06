@@ -41,3 +41,12 @@ for i in range(1000):
     pyautogui.typewrite("Sorry")  # Type the message
     pyautogui.press("enter")      # Press Enter to send it
     time.sleep(0.1)               # Wait 0.1 seconds between messages to avoid flooding
+```
+
+```requerment
+pip install pyautogui
+```
+
+```bash
+python whatsapp_bot.py
+```
