@@ -1,5 +1,7 @@
 # 🤖 WhatsApp Auto Message Bot
 
+![Hero_image](https://camo.githubusercontent.com/c9aa3ba0489beff4f03e4ff25915361226b49f071b00af9821acac7f79406836/68747470733a2f2f692e6962622e636f2f7a683352536456562f50686f6e652d496e666f2e706e67)
+
 A fun and lightweight Python script that automates sending a custom message repeatedly on WhatsApp Web. Perfect for harmless pranks with friends (with their consent 😄) or simply exploring Python automation.
 
 > ⚠️ **For educational and personal use only**
