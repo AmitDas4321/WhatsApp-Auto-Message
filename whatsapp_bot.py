@@ -7,7 +7,7 @@ def send_whatsapp_bot():
         print("⏳ You have 10 seconds to open WhatsApp Web and select the chat where messages should be sent...")
         time.sleep(10)
 
-        message = "I miss you ❤️"
+        message = "Sorry"
 
         for i in range(1000):
             pyperclip.copy(message)                # Copy message to clipboard
